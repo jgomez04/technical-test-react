@@ -1,5 +1,6 @@
 
 import { Input } from '@headlessui/react'
+import Logo from '../../assets/icons/Logo.svg'
 
 export const Navbar = () => {
 
@@ -17,7 +18,7 @@ export const Navbar = () => {
                     </div>
 
                     <div>
-                        <img src="src/assets/icons/Logo.svg" alt="icon" className="mt-8 h-16 text-gray-600" />
+                        <img src={Logo} alt="icon" className="mt-8 h-16 text-gray-600" />
                     </div>
 
                     <div className='content-end w-[350px] pr-[100px]'>

@@ -1,7 +1,10 @@
 import './App.css'
 import { Navbar } from './components/Navbar/Navbar'
+import Grupo5 from './assets/images/Grupo5.png';
+
 
 function App() {
+  
 
   return (
     <>
@@ -18,7 +21,7 @@ function App() {
         </div>
         
         <div className="absolute top-10 right-20">
-          <img src="src/assets/images/Grupo5.png" alt="icon" className='h-[500px] w-[500px]'/>
+          <img src={Grupo5} alt="icon" className='h-[500px] w-[500px]'/>
         </div>
       </div>
       </div>
