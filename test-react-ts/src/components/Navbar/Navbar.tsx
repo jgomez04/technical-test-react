@@ -7,7 +7,13 @@ export const Navbar = () => {
         <div className="bg-white shadow-md h-[184px]">
                 <div className="flex justify-between">
                     <div className="content-end pl-[100px]">
+                        <div className='flex gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="#f7527a" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
                         <a className='font-sans font-extrabold tracking-wide'>+1 (800) 312 - 2121</a>
+                        </div>
+                        
                     </div>
 
                     <div>
@@ -15,7 +21,12 @@ export const Navbar = () => {
                     </div>
 
                     <div className='content-end w-[350px] pr-[100px]'>
+                        <div className='flex gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="#f7527a" className="size-8">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                        </svg>
                         <a className='font-sans font-extrabold tracking-wide'>172 14th Street, Office 503, NY</a>
+                        </div>
                     </div>
                 </div>
 
@@ -29,10 +40,28 @@ export const Navbar = () => {
                         </ul>
                     </div>
                     
-
-                    <div className='content-center pr-[320px] h-[38px]' >
-                        <Input color='black' name="search" type="text" placeholder='Search' className="bg-neutral-100 border border-gray-300 rounded-full px-4 py-2 w-80"/>
+                    <div className="flex items-center bg-neutral-100 border border-gray-300 rounded-full px-4 py-2 mr-[300px]">
                         
+                        <Input
+                            name="search"
+                            type="text"
+                            placeholder="Search"
+                            className="bg-neutral-100 outline-none border-none flex-1 px-2 w-80"
+                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 text-gray-400"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={3}
+                            stroke="black"
+                        >
+                            <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 21l-4.35-4.35m0 0a7.5 7.5 0 1 0-10.61-10.61 7.5 7.5 0 0 0 10.61 10.61z"
+                            />
+                        </svg>
                     </div>
 
                     <div className='pr-[100px] flex items-center justify-center'>
@@ -51,6 +80,6 @@ export const Navbar = () => {
                         </svg>
                     </div>
                 </div>
-            </div>
+        </div>
       );
 }

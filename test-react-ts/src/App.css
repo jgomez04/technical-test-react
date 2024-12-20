@@ -1,0 +1,11 @@
+.half-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    background-color: #f5f5f5; /* Color gris */
+    border-top-left-radius: 90px; /* Ajusta según tus necesidades */
+    border-bottom-left-radius: 90px; /* Ajusta según tus necesidades */
+  }
